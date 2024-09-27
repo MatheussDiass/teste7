@@ -1,0 +1,163 @@
+.menu {
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    top: -27px; /* Menu inicialmente escondido acima da tela */
+    transition: top 0.5s; /* Efeito de transição */
+}
+/* Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+   font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(background.jpg);
+    color: #f5f5f5;
+    line-height: 1.6;
+  }
+  /* Partículas de fundo */
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+  }
+  
+  
+  /* Cabeçalho */
+  header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: red;
+  }
+  
+  nav {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #cde8c8; /* Verde claro */
+  }
+  
+  #home {
+    position: absolute;
+    left: 20px;
+    height: 40px;
+    width: 40px;
+    background-image: url(home.png);
+    z-index: 10;
+  }
+  
+  .header-content {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease forwards 0.5s;
+    color: #f2f0e0
+  }
+  
+  h1 {
+    font-size: 4rem;
+    letter-spacing: 2px;
+  }
+  
+  .header-content p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  /* Botão */
+  a.botao {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background-color: #f5f5f5;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  a.botao:hover {
+    transform: scale(1.05);
+    background-color: #cde8c8; /* Verde claro */
+  }
+  
+  /* Seções */
+  .scroll-section {
+    padding: 50px 5%; /* Ajustando o padding */
+    height: auto; /* Permitindo que as seções se ajustem ao conteúdo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #f5f5f5; /* Fundo escuro */
+    transition: background-color 0.3s;
+  }
+  
+  .content {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeIn 1s ease forwards;
+    max-width: 800px; /* Limite de largura */
+    text-align: center; /* Texto centralizado */
+  }
+  
+  h2 {
+    font-size: 2rem; /* Tamanho reduzido */
+    margin-bottom: 1rem;
+    color: #4231df;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin-top: 1rem; /* Ajustando a margem */
+    text-align: left; /* Texto à esquerda */
+  }
+  
+  ul li {
+    margin-bottom: 0.5rem; /* Reduzindo o espaçamento */
+    font-size: 1rem; /* Tamanho reduzido */
+  }
+  
+  /* Animações */
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(50px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
